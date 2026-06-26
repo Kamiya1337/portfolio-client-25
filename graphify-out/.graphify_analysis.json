@@ -1,0 +1,197 @@
+{
+  "communities": {
+    "0": [
+      "package_devdependencies",
+      "package_devdependencies_autoprefixer",
+      "package_devdependencies_eslint",
+      "package_devdependencies_eslint_js",
+      "package_devdependencies_eslint_plugin_react_hooks",
+      "package_devdependencies_eslint_plugin_react_refresh",
+      "package_devdependencies_globals",
+      "package_devdependencies_postcss",
+      "package_devdependencies_tailwindcss",
+      "package_devdependencies_types_react",
+      "package_devdependencies_types_react_dom",
+      "package_devdependencies_vite",
+      "package_devdependencies_vitejs_plugin_react"
+    ],
+    "1": [
+      "package",
+      "package_dependencies",
+      "package_dependencies_lucide_react",
+      "package_dependencies_react",
+      "package_dependencies_react_dom",
+      "package_name",
+      "package_private",
+      "package_type",
+      "package_version"
+    ],
+    "2": [
+      "components_evidencetable",
+      "components_evidencetable_evidencetable",
+      "components_hometab",
+      "components_hometab_hometab",
+      "data_portfoliodata",
+      "data_portfoliodata_portfoliodata"
+    ],
+    "3": [
+      "components_projectstab",
+      "components_projectstab_notrequired",
+      "components_projectstab_previewmodal",
+      "components_projectstab_projectstab",
+      "components_projectstab_resourceaction",
+      "components_projectstab_unavailable"
+    ],
+    "4": [
+      "components_summary",
+      "components_summary_summary",
+      "src_app",
+      "src_app_app",
+      "src_main"
+    ],
+    "5": [
+      "package_scripts",
+      "package_scripts_build",
+      "package_scripts_dev",
+      "package_scripts_lint",
+      "package_scripts_preview"
+    ],
+    "6": [
+      "bai_3_bai_3",
+      "bai_4_bai_4",
+      "bai_5_bai_5",
+      "bai_6_bai_6"
+    ],
+    "7": [
+      "components_printview",
+      "components_printview_printview"
+    ],
+    "8": [
+      "components_rubrictable",
+      "components_rubrictable_rubrictable"
+    ],
+    "9": [
+      "components_sidebar",
+      "components_sidebar_sidebar"
+    ],
+    "10": [
+      "eslint_config"
+    ],
+    "11": [
+      "postcss_config"
+    ],
+    "12": [
+      "tailwind_config"
+    ],
+    "13": [
+      "vite_config"
+    ]
+  },
+  "cohesion": {
+    "0": 0.15384615384615385,
+    "1": 0.2222222222222222,
+    "2": 0.4666666666666667,
+    "3": 0.4666666666666667,
+    "4": 0.6,
+    "5": 0.4,
+    "6": 0.5,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 1.0
+  },
+  "gods": [
+    {
+      "id": "data_portfoliodata_portfoliodata",
+      "label": "portfolioData",
+      "degree": 7
+    },
+    {
+      "id": "package_scripts",
+      "label": "scripts",
+      "degree": 5
+    },
+    {
+      "id": "components_projectstab_resourceaction",
+      "label": "ResourceAction()",
+      "degree": 3
+    },
+    {
+      "id": "src_app_app",
+      "label": "App()",
+      "degree": 2
+    },
+    {
+      "id": "components_hometab_hometab",
+      "label": "HomeTab()",
+      "degree": 2
+    },
+    {
+      "id": "components_printview_printview",
+      "label": "PrintView()",
+      "degree": 2
+    },
+    {
+      "id": "components_projectstab_unavailable",
+      "label": "unavailable()",
+      "degree": 2
+    },
+    {
+      "id": "components_projectstab_notrequired",
+      "label": "notRequired()",
+      "degree": 2
+    },
+    {
+      "id": "components_projectstab_projectstab",
+      "label": "ProjectsTab()",
+      "degree": 2
+    },
+    {
+      "id": "components_rubrictable_rubrictable",
+      "label": "RubricTable()",
+      "degree": 2
+    }
+  ],
+  "surprises": [
+    {
+      "source": "B\u00e0i 4",
+      "target": "B\u00e0i 3",
+      "source_files": [
+        "public/docs/B\u00e0i 4.pdf",
+        "public/docs/B\u00e0i 3.pdf"
+      ],
+      "confidence": "INFERRED",
+      "relation": "conceptually_related_to",
+      "why": "inferred connection - not explicitly stated in source"
+    },
+    {
+      "source": "B\u00e0i 5",
+      "target": "B\u00e0i 4",
+      "source_files": [
+        "public/docs/B\u00e0i 5.pdf",
+        "public/docs/B\u00e0i 4.pdf"
+      ],
+      "confidence": "INFERRED",
+      "relation": "conceptually_related_to",
+      "why": "inferred connection - not explicitly stated in source"
+    },
+    {
+      "source": "B\u00e0i 6",
+      "target": "B\u00e0i 5",
+      "source_files": [
+        "public/docs/B\u00e0i 6.pdf",
+        "public/docs/B\u00e0i 5.pdf"
+      ],
+      "confidence": "INFERRED",
+      "relation": "conceptually_related_to",
+      "why": "inferred connection - not explicitly stated in source"
+    }
+  ],
+  "tokens": {
+    "input": 885,
+    "output": 479
+  }
+}
