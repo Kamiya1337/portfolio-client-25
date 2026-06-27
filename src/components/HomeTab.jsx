@@ -26,7 +26,7 @@ export default function HomeTab() {
             ['Ngành', 'Ngôn ngữ và Văn Hóa Hàn Quốc'],
             ['Học phần', 'Công nghệ số & Ứng dụng AI'],
             ['Sinh viên', student.name],
-            ['Mã sinh viên', "25040517"],
+            ['Mã sinh viên', "25042403"],
           ].map(([label, value]) => (
             <div key={label}>
               <span className="section-kicker">{label}</span>
