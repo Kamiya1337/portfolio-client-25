@@ -28,7 +28,7 @@ export const portfolioData = {
       target: "Trình bày cấu trúc thư mục tối ưu và quy tắc đặt tên tệp đã thiết lập.",
       process: "Phân tích nhu cầu lưu trữ học tập, thiết lập cây thư mục theo môn học/kỳ học. Áp dụng quy tắc đặt tên file không dấu, dùng gạch dưới để dễ dàng tìm kiếm. Đồng bộ hóa với Google Drive.",
       evidenceImg: "/images/Bài 1.png",
-      driveLink: "hhttps://drive.google.com/drive/folders/1RirCtj_7JGqpePM_ui7HoultqozdAgzz",
+      driveLink: "https://drive.google.com/drive/folders/1RirCtj_7JGqpePM_ui7HoultqozdAgzz",
       report: "/docs/Bài 1.pdf",
       status: "Hoàn thành"
     },
