@@ -59,9 +59,9 @@
 
   .hover-lift:hover,
   .hover-lift:focus-within {
-    transform: translateY(-3px);
-    border-color: #7ec8e3;
-    box-shadow: 0 12px 24px rgba(126, 200, 227, 0.2);
+    transform: translateY(-5px);
+    border-color: #4da6c8;
+    box-shadow: 0 16px 36px rgba(126, 200, 227, 0.26);
   }
 
   .soft-blue-glow {
@@ -85,15 +85,17 @@
     border-bottom: 2px solid transparent;
     padding-block: 0.35rem;
     color: #667785;
-    transition: border-color 180ms ease, color 180ms ease;
+    font-weight: 500;
+    transition: border-color 220ms ease, color 220ms ease, font-weight 220ms ease;
   }
 
   .nav-link:hover,
   .nav-link:focus-visible,
-  .nav-link:active {
-    border-color: #7ec8e3;
-    color: #4da6c8;
-    text-shadow: 0 0 12px rgba(126, 200, 227, 0.2);
+  .nav-link:active,
+  .nav-link.active {
+    border-color: #4da6c8;
+    color: #182033;
+    font-weight: 700;
     outline: none;
   }
 

@@ -167,11 +167,11 @@ export default function PrintView() {
           </h3>
           <div className="space-y-4 text-sm text-justify leading-relaxed">
             <p>
-              Quá trình tham gia học phần và chủ động hoàn thành hệ thống bài tập thành phần này đã giúp bản thân trang bị được một tư duy số vững vàng và hệ thống hóa năng lực làm việc hiệu quả trong môi trường học thuật đại học. Các bài học thực tế, đặc biệt là tư duy tương tác hiệu quả với AI tạo sinh (Prompt Engineering) và quy tắc bảo mật an toàn thông tin, đã làm thay đổi hoàn toàn cách tiếp cận công nghệ của bản thân, biến công cụ AI thành người trợ lý đắc lực đồng hành cùng quá trình học tập kỹ thuật lâu dài.
+              Hành trình chủ động hoàn thiện hệ thống bài tập và xây dựng portfolio học phần này đã trang bị cho bản thân em một nền tảng tư duy số vững vàng, hỗ trợ đắc lực cho việc nghiên cứu ngôn ngữ trong môi trường đại học. Những bài học thực hành – từ việc tối ưu hóa kỹ năng viết Prompt (Prompt Engineering) phục vụ tra cứu học thuật đến việc áp dụng các quy tắc bảo mật an toàn thông tin – đã thay đổi hoàn toàn cách em nhìn nhận công nghệ: AI không còn là một công cụ giải bài tập thụ động, mà là người trợ lý đồng hành giúp nâng cao năng lực tự học lâu dài.
             </p>
             <div className="bg-slate-50 p-4 border border-slate-300 rounded-lg italic text-slate-800 text-xs leading-relaxed">
               <strong>Cam kết liêm chính học thuật:</strong> 
-              "Tôi cam đoan toàn bộ nội dung báo cáo, minh chứng sản phẩm số học tập được trình bày một cách tường minh trong Portfolio này hoàn toàn là thành quả tự học, tự thực hành dưới sự hướng dẫn chuyên môn của học phần. Mọi công cụ Trí tuệ Nhân tạo hỗ trợ đều được khai báo rõ ràng, tuân thủ tuyệt đối quy định chống đạo văn và liêm chính học thuật của nhà trường."
+              "Tôi cam đoan toàn bộ các báo cáo học thuật, minh chứng và liên kết sản phẩm số được trình bày trong Portfolio này đều là kết quả thực hành thực tế của bản thân dưới sự hướng dẫn của môn học. Mọi sự hỗ trợ từ công nghệ Trí tuệ Nhân tạo đều được khai báo trung thực, cam kết tuân thủ nghiêm ngặt quy chế liêm chính học thuật, tôn trọng quyền sở hữu trí tuệ và nói không với đạo văn."
             </div>
             
             {/* Khối chữ ký ngày tháng năm chuẩn học thuật */}

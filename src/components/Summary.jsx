@@ -1,51 +1,88 @@
-import { Quote } from 'lucide-react';
+import { Quote, ShieldAlert, CheckSquare } from 'lucide-react';
 
 export default function Summary() {
   return (
-    <div className="space-y-6">
-      <div className="max-w-3xl">
-        <span className="section-kicker">Reflection & academic integrity</span>
-        <h2 className="mt-3 text-3xl font-extrabold tracking-tight md:text-4xl">Suy ngẫm sau hành trình học tập</h2>
+    <div className="space-y-8">
+      {/* Title Header */}
+      <div className="max-w-3xl space-y-2">
+        <span className="section-kicker text-academic-strong text-xs font-bold tracking-widest">
+          Reflection & academic integrity
+        </span>
+        <h2 className="text-3xl font-extrabold tracking-tight md:text-4xl text-academic-ink">
+          Suy ngẫm sau hành trình học tập
+        </h2>
       </div>
 
-      <article data-reveal className="reveal soft-card hover-lift relative overflow-hidden rounded-3xl bg-white p-7 md:p-10">
-        <Quote className="absolute right-7 top-2 text-academic-blush" size={86} />
-        <h3 className="relative text-xl font-extrabold text-academic-strong">Kiến thức & Kỹ năng đã đạt được</h3>
-        <p className="relative mt-5 whitespace-pre-line text-justify leading-8 text-academic-muted">
-          {`"Ban đầu em nghĩ portfolio chỉ là gom các bài đã làm rồi đưa lên một trang web. Nhưng khi bắt tay vào làm, em mới thấy nếu chỉ đưa file lên thì sản phẩm sẽ khá rời rạc và không thể hiện được quá trình học.
+      {/* Main Quote Card - Reflections */}
+      <article 
+        data-reveal 
+        className="reveal soft-card hover-lift relative overflow-hidden rounded-3xl bg-white p-8 md:p-12 border border-academic-border shadow-soft"
+      >
+        <Quote className="absolute right-8 top-6 text-academic-blush/40 shrink-0" size={96} strokeWidth={1.5} />
+        
+        <div className="relative z-10 space-y-4">
+          <h3 className="text-xl font-extrabold text-academic-strong">
+            Kiến thức & Kỹ năng đã đạt được
+          </h3>
+          <p className="whitespace-pre-line text-justify leading-relaxed text-sm md:text-base text-academic-muted">
+            {`"Thú thật, ban đầu em chỉ nghĩ đơn giản làm portfolio là gom góp các file bài tập cũ rồi đăng lên web cho xong nhiệm vụ. Nhưng khi thực sự bắt tay thiết kế, em mới hiểu rằng nếu chỉ quăng link một cách cơ học thì trang web sẽ rất rời rạc, không phản ánh được tư duy phát triển của bản thân.
 
-Qua học phần này, em học được cách tổ chức tài liệu rõ ràng hơn, biết đặt tên file dễ hiểu hơn và lưu trữ theo từng môn, từng bài. Em cũng hiểu hơn về cách tìm kiếm thông tin, đánh giá nguồn và sử dụng AI trong học tập. Trước đây em thường hỏi AI khá bản năng, nhưng sau bài về prompt, em nhận ra nếu đưa rõ bối cảnh, yêu cầu và định dạng mong muốn thì kết quả sẽ tốt hơn nhiều.
+Môn học này đã thay đổi hoàn toàn cách em tổ chức không gian số. Em học được cách thiết lập cây thư mục khoa học, đặt tên file nhất quan để tra cứu nhanh chóng – một thói quen tưởng nhỏ nhưng cực kỳ cần thiết cho việc tích lũy tài liệu dịch thuật sau này. Về tư duy AI, thay vì đặt câu hỏi theo bản năng và nhận lại những câu trả lời mơ hồ như trước, giờ đây em đã biết cách ra lệnh (Prompt Engineering) rõ ràng bằng việc phân vai, cung cấp ngữ cảnh cụ thể và định hình định dạng đầu ra. Nhờ vậy, AI thực sự trở thành một trợ lý ngôn ngữ đắc lực giúp em học từ vựng và phân tích cấu trúc ngữ pháp Hàn Quốc hiệu quả hơn.
 
-Việc làm portfolio bằng web cũng giúp em luyện thêm kỹ năng trình bày sản phẩm số: sắp xếp bố cục, chia nội dung, gắn link báo cáo và làm sao để người xem dễ theo dõi."`}
-        </p>
+Bên cạnh đó, việc tự tay dàn dựng giao diện web cũng rèn cho em tư duy thiết kế thông tin số: sắp xếp bố cục trực quan, tối ưu hóa trải nghiệm người dùng để thầy cô dễ dàng theo dõi hành trình của em."`}
+          </p>
+        </div>
       </article>
 
+      {/* Challenges & Next Steps Grid */}
       <div className="grid gap-6 md:grid-cols-2">
-        <article data-reveal className="reveal soft-card hover-lift rounded-2xl bg-white p-7">
-          <span className="section-kicker">Thử thách</span>
-          <h3 className="mt-3 text-xl font-bold">Khó khăn gặp phải</h3>
-          <p className="mt-4 text-justify text-sm leading-7 text-academic-muted">
-            Khó nhất với em không phải là viết từng báo cáo, mà là gom tất cả lại thành một sản phẩm hoàn chỉnh. Khi đưa lên web, em phải chỉnh lại bố cục, màu sắc, phần minh chứng, bảng rubric và cả trang in PDF. Trong quá trình làm, em có dùng AI để hỗ trợ viết code, gợi ý giao diện và sửa nội dung. Tuy nhiên, em không dùng nguyên mọi thứ AI tạo ra. Em vẫn phải chạy thử, kiểm tra, chỉnh lại phần sai và thay các nội dung chung chung bằng thông tin thực tế của mình.
+        <article 
+          data-reveal 
+          className="reveal soft-card hover-lift rounded-2xl bg-white p-7 border border-academic-border shadow-sm"
+        >
+          <span className="section-kicker text-academic-strong text-[10px] block font-bold mb-2">Thử thách</span>
+          <h3 className="text-xl font-bold text-academic-ink">Khó khăn gặp phải</h3>
+          <p className="mt-3 text-justify text-sm leading-relaxed text-academic-muted">
+            Rào cản lớn nhất với em không nằm ở việc hoàn thành từng bài tập đơn lẻ, mà là làm sao kết nối chúng thành một thể thống nhất và mạch lạc trên nền tảng web. Việc tự căn chỉnh CSS, thiết kế bảng tiêu chí rubric hay tối ưu hóa chế độ in PDF thực sự là những thử thách hoàn toàn mới mẻ. Trong quá trình viết mã, em đã chủ động dùng AI để gỡ lỗi và tham khảo các ý tưởng giao diện. Tuy nhiên, em không bê nguyên những gì AI gợi ý. Em luôn dành thời gian chạy thử nghiệm, bóc tách dòng code để hiểu bản chất, sửa các lỗi hiển thị và thay thế toàn bộ dữ liệu mẫu bằng minh chứng học tập thực tế của mình.
           </p>
         </article>
-        <article data-reveal className="reveal soft-card hover-lift rounded-2xl bg-white p-7">
-          <span className="section-kicker">Next steps</span>
-          <h3 className="mt-3 text-xl font-bold">Kế hoạch hoàn thiện</h3>
-          <p className="mt-4 text-justify text-sm leading-7 text-academic-muted">
-            Sau khi hoàn thành web, em sẽ kiểm tra lại toàn bộ link báo cáo PDF để chắc chắn các file mở được đúng bài. Với những bài không có sản phẩm riêng, em sẽ ghi rõ rằng sản phẩm và minh chứng đã được trình bày trong báo cáo, không tạo thêm link hoặc nội dung không có thật. Em cũng sẽ kiểm tra bản PDF xuất từ portfolio để đảm bảo nội dung không bị thiếu khi nộp lên hệ thống.
+        
+        <article 
+          data-reveal 
+          className="reveal soft-card hover-lift rounded-2xl bg-white p-7 border border-academic-border shadow-sm"
+        >
+          <span className="section-kicker text-academic-strong text-[10px] block font-bold mb-2">Next steps</span>
+          <h3 className="text-xl font-bold text-academic-ink">Kế hoạch hoàn thiện</h3>
+          <p className="mt-3 text-justify text-sm leading-relaxed text-academic-muted">
+            Để portfolio đạt trạng thái hoàn thiện nhất, em sẽ rà soát lại toàn bộ đường dẫn báo cáo PDF nhằm đảm bảo không xảy ra lỗi liên kết khi thầy cô click vào. Với các phần bài tập không yêu cầu sản phẩm riêng biệt, em sẽ ghi rõ bối cảnh thực tế trong báo cáo thay vì cố tình tạo ra những đường link trống hoặc dữ liệu ảo. Cuối cùng, em sẽ kiểm tra kỹ định dạng xuất file PDF từ trang web để chắc chắn bố cục trình bày không bị lệch hay mất thông tin khi nộp lên hệ thống đánh giá của nhà trường.
           </p>
         </article>
       </div>
 
-      <article data-reveal className="reveal outcome-glow rounded-3xl bg-academic-blush p-32 text-center text-white md:p-10">
-        <h3 className="text-xl font-extrabold text-black">Cam kết Liêm chính Học thuật</h3>
-        <p className="mx-auto mt-4 max-w-3xl whitespace-pre-line text-sm italic leading-7 text-black/85">
-          {`Em, Nguyễn Hương Giang, cam kết các báo cáo và nội dung trong portfolio này phản ánh quá trình học tập và thực hành của bản thân. Em có sử dụng AI như một công cụ hỗ trợ, chủ yếu để gợi ý cách trình bày, sửa code và kiểm tra nội dung.
+      {/* Academic Integrity Pledge Banner */}
+      <article 
+        data-reveal 
+        className="reveal relative overflow-hidden rounded-3xl bg-academic-blush/60 p-8 md:p-12 border border-academic-border shadow-soft text-center"
+      >
+        <div className="absolute right-0 bottom-0 h-40 w-40 rounded-full bg-academic-pastel/25 blur-xl -mr-10 -mb-10" />
+        <div className="absolute left-6 top-6 text-academic-strong/20 shrink-0"><ShieldAlert size={48} /></div>
 
-AI chỉ nên hỗ trợ, không thể thay thế hoàn toàn việc học. Em không tạo minh chứng giả, không ghi sản phẩm không có thật và không cố tình trình bày sai quá trình làm bài của mình!
+        <div className="relative z-10 space-y-4 max-w-4xl mx-auto">
+          <div className="flex justify-center mb-2">
+            <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-white border border-academic-border text-academic-strong text-xs font-bold uppercase shadow-sm">
+              <CheckSquare size={14} /> Cam kết Liêm chính Học thuật
+            </span>
+          </div>
+          
+          <h3 className="text-xl font-extrabold text-academic-navy">
+            Chính xác, Minh bạch & Đạo đức công nghệ
+          </h3>
+          <p className="mx-auto max-w-3xl whitespace-pre-line text-sm italic leading-relaxed text-academic-ink/90">
+            {`Là một sinh viên ULIS, em – Nguyễn Hương Giang – cam kết toàn bộ báo cáo và minh chứng số trong portfolio này là kết quả từ quá trình tự học và thực hành nghiêm túc của cá nhân. Việc sử dụng các mô hình AI chỉ giới hạn ở vai trò một công cụ hỗ trợ gỡ lỗi lập trình, tra cứu thông tin và gợi ý cách diễn đạt.
 
-Em cảm ơn thầy cô đã dành thời gian đọc những dòng này!`}
-        </p>
+Em tin rằng công nghệ chỉ là đòn bẩy, còn tư duy tự học mới là giá trị cốt lõi. Em tuyệt đối không sao chép công sức của người khác, không ngụy tạo minh chứng học tập và không lạm dụng AI để thay thế năng lực tư duy độc lập của bản thân. Em chịu hoàn toàn trách nhiệm về tính trung thực của sản phẩm này! Em xin chân thành cảm ơn thầy cô đã theo dõi.`}
+          </p>
+        </div>
       </article>
     </div>
   );
